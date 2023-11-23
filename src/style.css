@@ -7,21 +7,27 @@
 }
 
 :root {
-  --body-bg-color: #242424;
-  --purple: #bb99dd;
+  /* --body-bg-color: #242424; */
+  --body-bg-color: url(../assets/dark-background.jpg);
+  --purple: #a36cdb;
   --switch-bg: url(../assets/moon.svg);
-  --surface-color: rgba(255, 255, 255, 0.2);
+  --surface-color: rgba(255, 255, 255, 0.1);
 }
 
 .light {
-  --body-bg-color: #faf7fd;
-  --purple: #bb99dd;
+  /* --body-bg-color: #faf7fd; */
+  --body-bg-color: url(../assets/light-background.jpg);
+  /* --purple: #bb99dd; */
+  --purple: #a36cdb;
   --switch-bg: url(../assets/sun.svg);
-  --surface-color: rgba(0, 0, 0, 0.2);
+  --surface-color: rgba(0, 0, 0, 0.1);
 }
 
 body {
-  background-color: var(--body-bg-color);
+  background-image: var(--body-bg-color);
+  background-repeat: no-repeat;
+  background-size: cover;
+
   width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -92,6 +98,8 @@ body {
   border: 1px solid var(--purple);
   border-radius: 9999px;
   cursor: pointer;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
 }
 
 .links {
@@ -112,6 +120,8 @@ body {
   color: var(--purple);
   font-weight: 600;
   transition: background 0.2s;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
 }
 
 .social {

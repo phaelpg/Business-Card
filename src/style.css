@@ -7,7 +7,6 @@
 }
 
 :root {
-  /* --body-bg-color: #242424; */
   --body-bg-color: url(../assets/dark-background.jpg);
   --purple: #a36cdb;
   --switch-bg: url(../assets/moon.svg);
@@ -15,9 +14,7 @@
 }
 
 .light {
-  /* --body-bg-color: #faf7fd; */
   --body-bg-color: url(../assets/light-background.jpg);
-  /* --purple: #bb99dd; */
   --purple: #a36cdb;
   --switch-bg: url(../assets/sun.svg);
   --surface-color: rgba(0, 0, 0, 0.1);
@@ -27,7 +24,6 @@ body {
   background-image: var(--body-bg-color);
   background-repeat: no-repeat;
   background-size: cover;
-
   width: 100vw;
   height: 100vh;
   overflow: hidden;

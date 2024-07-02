@@ -1,51 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Social Tree</title>
-      <link
-         rel="shortcut icon"
-         href="./assets/favicon.svg"
-         type="image/x-icon"
-      />
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap"
-         rel="stylesheet"
-      />
-      <link rel="stylesheet" href="./src/style.css" />
-      <link rel="stylesheet" href="./src/responsive.css" />
-   </head>
-   <body>
-      <div class="container">
-         <div class="ellipse">
-            <img
-               class="photo"
-               src="./assets/person.jpg"
-               alt="picture of a woman"
-            />
-         </div>
-         <p class="instagram">@instagram</p>
-         <div class="switch" onclick="toggleMode()">
-            <button></button>
-            <span></span>
-         </div>
-         <div class="links">
-            <a class="link" href="#">LINK 1</a>
-            <a class="link" href="#">LINK 2</a>
-            <a class="link" href="#">LINK 3</a>
-            <a class="link" href="#">LINK 4</a>
-         </div>
-         <div class="social">
-            <a href="#"><img src="./assets/x.svg" alt="Ícone do twitter" /></a>
-            <a href="#"><img src="./assets/twitch.svg" alt="Ícone da twitch" /></a>
-            <a href="#"><img src="./assets/instagram.svg" alt="Ícone do instagram" /></a>
-            <a href="#"><img src="./assets/linkedin.svg" alt="Ícone do linkedin" /></a>
-            <a href="#"><img src="./assets/github.svg" alt="Ícone do github" /></a>
-         </div>
-      </div>
-      <script src="script.js"></script>
-   </body>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cartão de visitas</title>
+    <link
+      rel="shortcut icon"
+      href="./src/assets/favicon.svg"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="elipse">
+      <img src="./src/assets/person.jpg" alt="Foto de perfil da página" />
+    </div>
+    <p class="instagram">@instagram</p>
+    <div class="trilho">
+      <div class="indicador"></div>
+    </div>
+    <div class="links">
+      <a class="link" href="#">LINK 1</a>
+      <a class="link" href="#">LINK 2</a>
+      <a class="link" href="#">LINK 3</a>
+      <a class="link" href="#">LINK 4</a>
+    </div>
+    <div class="social">
+      <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-twitch"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="#"><i class="fa-brands fa-github"></i></a>
+    </div>
+    <script src="./src/js/script.js"></script>
+  </body>
 </html>

@@ -1,6 +1,7 @@
+let trilho = document.querySelector(".trilho")
+let body = document.querySelector("body")
 
-function toggleMode() {
-   const html = document.documentElement
-
-   html.classList.toggle("light")
-}
+trilho.addEventListener("click", () => {
+  body.classList.toggle("dark")
+  trilho.classList.toggle("dark")
+})

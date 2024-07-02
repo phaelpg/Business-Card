@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   color: var(--purple);
+  text-decoration: none;
 }
 
 :root {
@@ -24,12 +25,11 @@ body {
   background-image: var(--body-bg-color);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100vw;
   height: 100vh;
-  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background .4s;
 }
 
 .container {
@@ -42,7 +42,7 @@ body {
 .photo {
   width: 200px;
   height: 200px;
-  border-radius: 999px;
+  border-radius: 50%;
   object-fit: cover;
 }
 
@@ -52,7 +52,7 @@ body {
   align-items: center;
   width: 213px;
   height: 213px;
-  border-radius: 999px;
+  border-radius: 50%;
   border: 1px solid var(--purple);
   margin-bottom: 15px;
 }
@@ -75,11 +75,29 @@ body {
   left: 0%;
   transform: translateY(-50%);
   cursor: pointer;
-  animation: switch-moon 0.5s forwards;
+  animation: switch-moon .5s forwards;
+}
+
+@keyframes switch-moon {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 50%;
+  }
 }
 
 .light .switch button {
-  animation: switch-sun 0.5s forwards;
+  animation: switch-sun  0.5s forwards;
+}
+
+@keyframes switch-sun {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0%;
+  }
 }
 
 .switch button:hover {
@@ -92,7 +110,7 @@ body {
   height: 24px;
   background: var(--surface-color);
   border: 1px solid var(--purple);
-  border-radius: 9999px;
+  border-radius: 999px;
   cursor: pointer;
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
@@ -112,7 +130,6 @@ body {
   height: 49px;
   border: 1px solid var(--purple);
   border-radius: 4px;
-  text-decoration: none;
   color: var(--purple);
   font-weight: 600;
   transition: background 0.2s;
@@ -143,20 +160,3 @@ body {
   background: var(--surface-color);
 }
 
-@keyframes switch-moon {
-  from {
-    left: 0%;
-  }
-  to {
-    left: 50%;
-  }
-}
-
-@keyframes switch-sun {
-  from {
-    left: 50%;
-  }
-  to {
-    left: 0%;
-  }
-}

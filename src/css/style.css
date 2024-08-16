@@ -9,10 +9,10 @@
 }
 
 :root {
-  --bg-color-light: #e4e4e4;
+  --bg-color-light: #cdcdcd;
   --bg-color-dark: #212121;
   --purple: #a36cdb;
-  --bg-topography: url(../assets/bg-topography.svg);
+  --bg-topography: url(../assets/topography.svg);
   --switch-bg: url(../assets/moon.svg);
   --switch-bg-light: url(../assets/sun.svg);
   --surface-color: rgba(255, 255, 255, 0.1);
@@ -27,7 +27,8 @@ body {
   align-items: center;
   justify-content: center;
   gap: 24px;
-  background: var(--bg-color-light) var(--bg-topography);
+  background: var(--bg-color-light) var(--bg-topography) no-repeat center/cover;
+  transition: 0.4s;
 }
 
 .elipse {
